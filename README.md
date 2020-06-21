@@ -24,7 +24,10 @@ Steps that are followed to build this project :
     3.5 Access Data Source through Repository.
     3.6 Construct the sample HTML to show the data.
     3.7 Create a new file store.module.ts - Import Browser Module, NgModule, StoreComponent. (This is for spliting the component into small components and building up the dependency on the app.module)
-    3.8 Now we will be showing the data using Angular Pipe 
+    3.8 Now we will be showing the data using Angular Pipe
+    3.9 Build the products and the categories
+    3.10 Build the products per pages
+    3.11 Dislay the number of pages 
 
 Introduction on Bootstrap by instructor.
 
