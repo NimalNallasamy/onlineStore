@@ -1,27 +1,34 @@
-# OnlineStore
+This project is done along with the tutor, in Angular App course in Udemy. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+Steps that are followed to build this project : 
 
-## Development server
+1. Create a folder name Model.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. Inside the Model, do these steps
+    2.1 The first file created in this model is product.model.ts.
+        2.1.1 Definig the product class, and initialize the values using constructor.
+    2.2 The next file is static.datasource.ts 
+        2.2.1 This class contains the data that's gonna be populated in the front end, for the user to see. 
+        2.2.2 We made use of the injector decorator, observable, from to inject the details to the Repository class.
+    2.3 The next file is product.repository.ts 
+        2.3.1 This method uses the Service injected from data source.
+        2.3.2 Also this method contains certain method that returns the data in some specific format to the front end. 
+    2.4 The next file is model.module.ts
+        2.4.1 This contains the NgModule decorator that provides the StaticDataStore and Repo.
 
-## Code scaffolding
+3. We will build the model and then we will build the store.
+    3.1 Build a new component - "store"
+    3.2 Rename the selector - "store"
+    3.3 Import ProductRepo
+    3.4 Implement getAllProducts and getAllCategories
+    3.5 Access Data Source through Repository.
+    3.6 Construct the sample HTML to show the data.
+    3.7 Create a new file store.module.ts - Import Browser Module, NgModule, StoreComponent. (This is for spliting the component into small components and building up the dependency on the app.module)
+    3.8 Now we will be showing the data using Angular Pipe 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Introduction on Bootstrap by instructor.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Its all about grid system.
+2. Divide our window into 12 cells.
+3. Assign categories 3 cells.
+4. Assign products 9 cells.

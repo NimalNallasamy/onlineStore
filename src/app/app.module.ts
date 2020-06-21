@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StoreComponent } from './store/store.component';
+import { ProductRepository } from 'src/Model/product.repository';
+import { StaticDataSource } from 'src/Model/static.datasource';
+import { StoreModule } from './store/store.module';
 
 @NgModule({
   declarations: [
@@ -10,9 +14,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule
   ],
-  providers: [],
+  providers: [ProductRepository, StaticDataSource],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
